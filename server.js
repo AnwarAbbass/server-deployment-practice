@@ -10,6 +10,10 @@ app.get('/',(req,res)=>{
     res.send('welcome to server.js')
 });
 
+app.get('/500',(req,res)=>{
+    throw new Error('SOMETHING IS ERROR');
+});
+
 app.use('*',error404);
 app.use(error500);
 

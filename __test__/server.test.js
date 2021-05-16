@@ -6,13 +6,13 @@ const req= require(serv.app);
 
 descripe('server',()=>{
   it('should be 404 status', async ()=>{
-      const res= await req.get('/error404')
+      const res= await req.get('/III')
       expect(res.status).toBe(404);
   });
 
   it('should be 500 status', async ()=>{
-    const res= await req.get('/error500')
-    expect(res.status).toBe(500);
+    const res= await req.get('/500')
+    expect(res.status).toEqual(500);
   });
 
   it('should be welcome message', async ()=>{
