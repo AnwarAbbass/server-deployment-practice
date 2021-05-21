@@ -1,7 +1,7 @@
-'use strickt';
-module.export=(req,res)=>{
+'use strict';
+module.exports=(req,res)=>{
     res.status(404).json({
-        status:400,
+        status:404,
         message:'not found'
     });
 };

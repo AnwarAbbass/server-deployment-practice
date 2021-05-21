@@ -1,24 +1,22 @@
-'use strickt';
+'use strict';
 
-const express=require('express');
-const error404=require('./errorHandlers/404.js');
-const error500=require('./errorHandlers/500.js');
-
+const express = require('express');
 const app = express();
 
-app.get('/',(req,res)=>{
+const errorHandler = require('./errorHandlers/500');
+const notFoundHandler = require('./errorHandlers/404.js');
+
+app.get('/', (req, res) => {
     res.send('welcome to server.js')
 });
 
-app.get('/500',(req,res)=>{
-    throw new Error('SOMETHING IS ERROR');
-});
+app.get('/bad', (req, res) => { throw new Error('something error'); });
 
-app.use('*',error404);
-app.use(error500);
+app.use('*', notFoundHandler);
+app.use(errorHandler);
 
-function start(){
-    app.listen(PORT,()=>{
+function start(PORT) {
+    app.listen(PORT, () => {
         console.log(`listen on port ${PORT}`);
     });
 }
