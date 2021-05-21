@@ -1,9 +1,8 @@
 # server-deployment-practice
-# basic-api-server
 
 ## Deployment Test
 Author: Anwar Abbass
-[tests report]()
+[tests report](https://github.com/AnwarAbbass/server-deployment-practice/pull/1#issue-650258178)
 [heroku](https://anwarabbass-server-deploy-dev.herokuapp.com/)
 ## Setup
 `.env` requirements
