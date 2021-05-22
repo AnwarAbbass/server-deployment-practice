@@ -2,7 +2,7 @@
 
 ## Deployment Test
 Author: Anwar Abbass
-[tests report](https://github.com/AnwarAbbass/server-deployment-practice/pull/1#issue-650258178)
+[tests report](https://github.com/AnwarAbbass/server-deployment-practice/runs/2641942990?check_suite_focus=true)
 [heroku](https://anwarabbass-server-deploy-dev.herokuapp.com/)
 ## Setup
 `.env` requirements
